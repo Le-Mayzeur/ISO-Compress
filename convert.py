@@ -67,7 +67,7 @@ class Convert():
         self.get_extension.set("png")
 
     def convertir(self):
-        '''the convert, i can use from PIL import Image istead of cammand'''
+        '''the convert, i can use from **PIL import Image** istead of cammand'''
 
         try:
             if self.From.name.split(".")[-1] not in self.format_compatible:
