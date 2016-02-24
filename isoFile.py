@@ -292,8 +292,8 @@ class IsoFile():
                             if Name == self.name_control:
                                 Name = os.getlogin()+self.name_control
                             full_name = os.path.basename(self.files)+"_"+Name+".iso"
-                            if self.if_iso_already_exist(full_name,os.path.dirname(self.files)):
-                                full_name = os.path.basename(self.files)+"_"+Name+"@.iso"
+                            #if self.if_iso_already_exist(full_name,os.path.dirname(self.files)):
+                                #full_name = os.path.basename(self.files)+"_"+Name+"@.iso"
                             cmd.append(self.savefiles+"/"+full_name)
                             dude = threading.Thread(target = self.ProgressBar, args=(niveau,cmd,Name,progress))
                             dude.start()
